@@ -1,0 +1,129 @@
+
+.site-container {
+  background-color: rgb(240,240,240);
+  font-family: Helvetica, Verdana, sans-serif;
+  margin: 0 auto;
+  width: 75%;
+}
+
+footer {
+ text-align: center;
+ margin-top: 0px;
+ margin-bottom: 0px;
+ padding: .05em .5em;
+
+}
+
+.footer {
+    display: inline-block;
+    padding: .05em .05em;
+    text-align: center;
+    width 100%
+}
+
+.footer a {
+    color: #000000;
+    font-size: .65em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: .05em .05em;
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer li {
+  border-right: thin solid black;
+  display: inline;
+  font-size: 1em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: .05em .5em;
+  text-align: center;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: .05em .5em;
+}
+
+.login {
+  float: right;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: .1em .1em;
+	right: 3px;
+  width: auto;
+}
+
+.more {
+  padding-left: 40px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.nav {
+  background-color: rgb(128,128,128);
+  color: #000000;
+  display: inline-block;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+
+.nav a {
+  color: #000000;
+	text-decoration: none;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: .05em .05em;
+}
+
+.nav h1 {
+  font-size: 1em;
+  font-weight: bold;
+  float: left;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: .05em .5em;
+}
+
+.nav li {
+  border-right: thin solid white;
+  display: inline;
+  font-size: 1em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: .05em .5em;
+}
+
+/* The white box around the "I" */
+.nav span {
+  font-family:serif;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: .1em .4em;
+}
+
+.nav ul {
+  float: left;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: .1em .1em;
+}
+
+.small-font {
+  font-size: 12px;
+  font-weight: bold;
+  color: #999999;
+  padding-left: 15px;
+}
