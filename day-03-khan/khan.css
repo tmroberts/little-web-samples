@@ -174,7 +174,7 @@ h1 .khan {
 
 .close-to-earning h2 {
 	font-weight:bold;
-	font-size: 1.2em;
+	font-size: .75em;
 	text-transform:uppercase;
   margin: 0 0 20px 0
 
@@ -191,7 +191,7 @@ h1 .khan {
 	height: 90px;
 	line-height: 1.2em;
 	outline: solid 1px red;
-	width 90px;
+	width: 90px;
 
 
 }
