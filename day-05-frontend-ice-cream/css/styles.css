@@ -1,0 +1,197 @@
+/*
+
+Add eric meyer resets HERE . . . 
+
+*/
+
+
+* {
+  vertical-align: top;
+}
+
+body {
+  font-family: 'Helvetica', Arial, Sans-serif;
+  line-height: 1.5em;
+  color: #127070;
+}
+
+.container {
+  width: 960px;
+  margin: 30px;
+}
+
+
+header {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 70px;
+  background-color: #57C0B9;
+  padding-top: 10px;
+  padding-bottom: 7px;
+  width: 100%;
+}
+
+header img {
+  border-radius: 10%;
+  position:absolute;
+  margin-left: 20px;
+}
+
+header nav, header li {
+  display: inline-block;
+}
+
+
+.nav-container {
+    text-align: right;
+    
+}
+
+nav ul {
+  margin-top: 20px;
+}
+
+nav ul a {
+  color: #127070;
+  margin-right: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav ul a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+
+.btn {
+  width: 170px;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 4px;
+  line-height: 50px;
+  font-size: 18px;
+  background: #CF6480;
+  color: #fff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: #90172A;
+}
+
+
+.banner {
+  background: url('../images/ice%20cream1.jpg') fixed;
+  /* NO tiling; */ 
+  background-size: cover;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 250px;
+  padding-top: 150px;
+  width: 100%;
+
+  position: relative;
+}
+
+.banner h1 {
+  color:57C0B9;
+  font-size: 72px;
+  text-align: center;
+  margin-top: 0;
+}
+
+
+
+.main {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+#about {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.main .frontend {
+  width: 55%;
+  display: inline-block;
+  padding-right: 40px;
+
+}
+
+.main .contact {
+  display: inline-block;
+  width: 38%;
+}
+
+.main .contact img {
+  margin: 0 auto;
+  width: 300px;
+  display: block;
+}
+
+.main .caption h3 {
+  text-align: center;
+}
+
+.main .flavors {
+  width: 55%;
+  display: inline-block;
+  padding-right: 10px;
+}
+
+
+.content-container {
+    text-align: center;
+}
+
+.flavors-container {
+    text-align: left;
+}
+
+.flavors-container h2 {
+    text-align: center;
+}
+
+.flavors-container li{
+  background-color: #57C0B9;
+  list-style-type: none;
+}
+
+.flavors-container .flavors li:nth-child(2n+1) {
+  background-color: #E6C99E;
+}     
+         
+footer {
+  /*outline: 10px solid #E6C99E;*/
+  border-radius: 20px;
+  height: 370px;
+  background-color: #127070;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  /*margin: 10px;*/
+  text-align: left;
+}
+
+footer .footer-contact {
+  color: #E6C99E;
+  display: inline-block;
+  margin: 20px;
+  text-align: left;
+  width: 47%;
+}
+
+footer .footer-contact h2 {
+  padding-left: 20;
+}
+
+footer ul {
+  padding-left: 20;
+}
+
+footer li {
+  list-style-type: none;
+  padding-bottom: 10px;
+}
