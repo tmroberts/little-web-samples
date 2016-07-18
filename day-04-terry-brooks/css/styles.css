@@ -1,0 +1,78 @@
+body {
+    background-color: black;
+    font-family: Arial, Sans-serif;
+    line-height: 1.5em; 
+    margin 0 auto;
+    padding: 20px;
+}
+
+.container {
+    background: url(../images/bg-footer-wilbridge.jpg);
+    background-size: cover;
+    height: 600px;
+    margin: 0 auto;
+    padding: 0 10px;
+    position: absolute;
+    width: 100%;
+  }
+
+
+.main-content {
+    background-color: rgba(0,0,0,0.5);
+    /*background-color: black;
+    opacity: 0.5;*/
+    height: 350px;
+    margin: 50px 30px;
+    padding: 10px 30px 10px 30px;
+    position: relative;
+    width: 400px;
+}
+
+.main-content h1 {
+    color: #FFFFFF;
+    font-family: Arial Black;
+    font-size: 1em;
+}
+
+
+.display {
+    color: #11AAFF;
+    font-size: .7em; 
+    line-height: 14px;
+    padding-bottom: 15px;
+    border-bottom: solid 1px white;
+}
+
+.display img {
+    padding: 3px;
+    margin-top: 15px;
+    outline: solid 1px white;
+}
+
+.line-one {
+    color: #11AAFF; 
+    display: inline-block;
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 12px;
+}
+
+
+.line-two {
+    color: #EDF4FF;
+    color: darkgrey;
+    display: inline-block;
+    position: absolute;
+    margin-top: 32px;
+    margin-left: 12px;
+}
+
+
+.line-three {
+    color: #FFFFFF;
+    display: inline-block;
+    position: absolute;
+    margin-top: 55px;
+    margin-left: 12px;
+}
+
