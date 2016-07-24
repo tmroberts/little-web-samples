@@ -1,18 +1,13 @@
-var clickMeDiv = document.querySelector('.name_bob');
-
-/* clickMeDiv.textContent = 'Click me now!'; */
+var bob = document.querySelector('.name_bob');
 
 function onClass() {
-
-  var containsClass = clickMeDiv.classList.contains('on');
-
+  var containsClass = bob.classList.contains('on');
   if (containsClass === false) {
-    clickMeDiv.classList.add('on');
+    bob.classList.add('on');
   }
   else {
-    clickMeDiv.classList.remove('on');
+    bob.classList.remove('on');
   }
-
 }
-
-clickMeDiv.addEventListener('click', onClass);
+  
+bob.addEventListener('click', onClass);

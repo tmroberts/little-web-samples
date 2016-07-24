@@ -50,7 +50,6 @@ table {
 /*   End of CSS reset */
 
 body {
-  /*border: 1px solid red;*/
 	background-color: white;
   font-family:sans-serif;
 	width: 800px;
@@ -74,106 +73,30 @@ header h1 {
 .container {
   border: solid 2px #CECFD5;
   background-color: white;
-  width: 650px;
+  width: 700px;
+	height: 400px;
   border-radius: 15px;
+	margin-left: 20px;
+	text-align:center;
+	margin: 0 auto;
   position: relative;
 }
 
 
-ul li {
-	display:inline-block;
+.on {
+	border: 2px solid rgba(0, 81, 31, 1);
+	background-color: rgba(0, 255, 0, 0.2);
 }
 
-.circle {
+div {
 		/* outline: 2px solid blue; */
   	display: inline-block;
-    border-radius: 100%;
-		border: 2px solid rgba(0, 81, 31, 1);
-    background-color: rgba(0, 255, 0, 0.2);
-    height: 100px;
-    width: 100px;
-			margin: 20px auto;
-			margin-left: 20px;
-}
-
-
-.name_bob {
-  /* outline: 2px solid red; */
-	display: inline-block;
-  text-align: center;
-	padding-top: 33px;
-	padding-left: 20px;
-	font-size: 30px;
-	color: #00000;
-}
-
-.name_sue {
-  /* outline: 2px solid red; */
-display: inline-block;
-  text-align: center;
-	padding-top: 35px;
-	padding-left: 20px;
-	font-size: 30px;
-	color: #00000;
-}
-
-.name_fred {
-  /* outline: 2px solid red; */
-display: inline-block;
-  text-align: center;
-	padding-top: 35px;
-	padding-left: 20px;
-	font-size: 30px;
-	color: #00000;
-}
-
-.name_jack {
-  /* outline: 2px solid red; */
-display: inline-block;
-  text-align: center;
-	padding-top: 35px;padding-left: 20px;
-	font-size: 30px;
-	color: #00000;
-}
-
-.name_dean {
-  /* outline: 2px solid red; */
-display: inline-block;
-  text-align: center;
-	padding-top: 35px;
-	padding-left: 20px;
-	font-size: 30px;
-	color: #00000;
-}
-
-.click-me {
-        border: solid 1px #CCC;
-        display: inline-block;
-        padding: 20px;
-}
-
-
-.onbob {
-        background-color: #000;
-        color: #FFF;
-}
-
-.onsue {
-        background-color: #000;
-        color: #FFF;
-}
-
-.onfred {
-        background-color: #000;
-        color: #FFF;
-}
-
-.onjack {
-        background-color: #000;
-        color: #FFF;
-}
-
-.ondean {
-        background-color: #000;
-        color: #FFF;
+		font-size: 30px;
+    border-radius: 50%;
+		height: 100px;
+		width: 100px;
+		text-align: center;
+		line-height: 100px;
+		border: 2px solid rgba(0, 0, 0, 1);
+    background-color: rgba(255, 255, 255, 1);
 }
