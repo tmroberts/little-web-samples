@@ -45,9 +45,9 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-}
+}   
 
-//* End of reset */
+/* End of reset */
 
 body {
   background-color: #fff;
@@ -71,7 +71,6 @@ body {
   width: 100%;
 }
 
-
 .image-footer {
 	/* outline: 1px solid blue; */
 	border-bottom: solid 1px #dddddd;
@@ -92,7 +91,6 @@ body {
 	margin-left: 0;
   width: 50px;
 }
-
 
 /* How to prepend the hashtag:
 https://www.smashingmagazine.com/2011/07/learning-to-use-the-before-and-after-pseudo-elements-in-css/
@@ -127,10 +125,11 @@ https://www.smashingmagazine.com/2011/07/learning-to-use-the-before-and-after-ps
 	vertical-align: middle;
 	width: 15px;
 }
-     
+
 .authors, .authors li {
   display: inline;
 }
+
 /*
 End of CSS
 */
