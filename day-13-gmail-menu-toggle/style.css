@@ -1,0 +1,110 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End of reset */
+
+.container {
+	max-width: 350px;
+	margin: 25px auto;
+	padding: 10px;
+
+}
+
+.compose {
+	background-color: #D14836;
+	border-radius: 2px;
+	color: #FFFFFF;
+	font-size: 11px;
+	font-family: arial,sans-serif;
+	font-weight: bold;
+	line-height: 27px;
+	outline: 0;
+	padding: 0 8px;
+	margin-bottom: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+	width: 100px;
+}
+
+#the-list {
+	width: 156px;
+	font-size: 1em;
+	line-height: 1.5em;
+	list-style: none;
+	display: block;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	text-decoration:none;
+}
+
+li {
+	padding-left: 30px;
+	width: 70px;
+}
+
+li:hover {
+	background-color: #DDD;
+
+}
+
+.selected {
+	border-left: 4px solid #D14836;
+	color: #D14836;
+	padding-left: 26px;
+}
+
+.not-selected {
+	color: #D14836;
+}
+
+
+/*
+End of CSS
+*/
