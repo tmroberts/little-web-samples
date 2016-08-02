@@ -80,9 +80,48 @@ header h1 {
 
 }
 
+.only-five {
+	font-size: 1em;
+
+	margin-bottom: 20px;
+
+}
+
+
+.used {
+	border: solid 2px #CECFD5;
+	background-color: white;
+	font-size: 1.4em;
+	color: rgba(0, 100, 255, .7);
+	width: 120px;
+	height: 20px;
+	border-radius: 15px;
+	padding: 5px;
+	text-align:center;
+	margin: auto;
+}
+
+h2 {
+	font-size: 1.4em;
+	color: rgba(0, 100, 255, .4);
+	margin-bottom: 10px;
+}
 
 #button {
-	background-color: rgba(230, 94, 109, 1.0);
+	background-color: rgba(0, 255, 0, .7);
+	border-radius: 5px;
+	line-height: 1.8em;
+	font-size: .7em;
+	font-weight: 500;
+	width: 120px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+}
+
+
+#reset {
+	background-color: rgba(230, 94, 109, .7);
 	border-radius: 5px;
 	line-height: 1.8em;
 	font-size: .7em;
@@ -94,12 +133,8 @@ header h1 {
 
 .output {
 	margin-top: 20px;
+	margin-bottom: 30px;
 }
-
-
-
-
-
 
 
 /*
