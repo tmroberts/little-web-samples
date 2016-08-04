@@ -4,11 +4,11 @@ var output = document.querySelector('.output');
 var inputValue = '';
 var randomNumber = Math.ceil(Math.random() * 50);
 var tries = 0;
-
 var used = document.querySelector('.used');
 var numbersUsed = [];
 
 function guessFunc() {
+    input.focus();
     inputValue = input.value;
 
     if (isNaN(inputValue)) {
@@ -21,8 +21,8 @@ function guessFunc() {
       return;
     }
 
-    if (inputValue > 50 ) {
-      output.textContent = 'Follow directions. . .  Enter a number less than 50';
+    if (inputValue > 50 || inputValue < 1) {
+      output.textContent = 'Follow directions. . .  Enter a number between 1 and 50';
       return;
     }
 
@@ -34,14 +34,17 @@ function guessFunc() {
     }
     else {
       output.textContent = "You win!";
+      return;
     };
 
     numbersUsed.push(inputValue);
     used.textContent = numbersUsed;
+    /* input.value = ''; */
 
     tries +=1;
     if (tries == 5) {
-      output.textContent = "You have run out of guesses!";
+      output.textContent = "You have run out of guesses!  " + "The Number was: " + randomNumber;
+      /* window.location.reload() */
       return;
     };
 };
