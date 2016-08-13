@@ -45,7 +45,7 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-}   
+}
 
 /* End of reset */
 
@@ -54,80 +54,76 @@ body {
 }
 
 .octodex {
-		margin: 20px 15% auto;
-		overflow: auto;
+	width: 99%;
 }
 
 .octocat {
-	/*border: solid 2px #DDD; */
 	float: left;
-	margin: 6px;
-  width: 31.33%;
+  width: 28%;
+	margin: .9%;
 }
 
 .octocat img {
 	border: solid 1px #DDD;
 	border-radius: 2px;
-  width: 100%;
+  max-width: 100%;
 }
 
+
 .image-footer {
-	/* outline: 1px solid blue; */
-	border-bottom: solid 1px #dddddd;
+	/* outline: 1px solid orange; */
+	/*display: block;*/
+	display: inline-block;
+	border-bottom: solid 1px #DDD;
 	color: #575757;
 	font-family: sans-serif;
-	font-size: .65em;
-  overflow: auto;
+	font-size: .6em;
 	padding-top: 4%;
 	padding-bottom: 6%;
-  position: relative;
-
+	width: 100%;
 }
 
 .image-number {
-	/*outline: 1px solid green;*/
+	/* outline: 1px solid red; */
   float: left;
+	font-size: 1.3em;
 	font-weight: bold;
 	margin-left: 0;
-  width: 50px;
+  width: 10%;
 }
 
 /* How to prepend the hashtag:
 https://www.smashingmagazine.com/2011/07/learning-to-use-the-before-and-after-pseudo-elements-in-css/
 */
-
 .image-number:before {
    content: "#";
 }
 
 /* https://css-tricks/almanac/properties/p/position - absolute positioning "right"
 */
+
 .image-caption {
-	/* outline: 1px solid pink; */
-  position: absolute;
-	right: 0;
-  text-align: right;
-	line-height: .7em;
-	padding-top: 5px;
-  width: 70%;
+	/* outline: 1px solid green; */
+	display: inline-block;
+	font-size: 1.1em;
+  margin-left: 1%;
+	text-align: right;
+	float: right;
+	width: 80%;
 }
 
 .image-caption a {
-	/* outline: 1px solid red; */
 	color: #121212;
 	font-weight: bold;
 	text-decoration: none;
 }
 
-.authors img {
+.authors, .authors img {
+	/* outline: 1px solid red; */
 	border-radius: 5px;
-	/* outline:1px solid blue; */
-	vertical-align: middle;
-	width: 15px;
-}
-
-.authors, .authors li {
-  display: inline;
+	display: inline-block;
+	float: right;
+  width: 20%;
 }
 
 /*
