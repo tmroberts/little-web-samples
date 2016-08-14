@@ -1,0 +1,179 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End of reset */
+
+body {
+	font-family: helvetica, verdana, sans-serif;
+}
+
+
+
+.container {
+  background-color: white;
+	overflow: auto;
+  /*width: 100%;*/
+}
+
+.img-container {
+	float: left;
+	margin: .65%;
+	width: 31%;
+}
+
+.img-container img {
+	width: 100%;
+}
+
+.container {
+	background-color: #FFF;
+	overflow: auto;
+}
+
+.box {
+	float: left;
+	height: 400px;
+	position: relative;
+}
+
+.box-1 {
+	background-color: red;
+	background-image: url(ovenbits-1-cellucore.jpg);
+	background-position: center;
+	background-size:cover;
+	margin: 0 1.5% 0 0;
+	width: 32.333333%;
+}
+
+.box-2 {
+	background-color: green;
+	background-image: url(ovenbits-2-iphone.jpg);
+	background-position: center;
+	background-size:cover;
+	margin: 0 1.5% 0 0;
+	width: 32.333333%;
+}
+
+.box-3 {
+	background-color: blue;
+	background-image: url(ovenbits-3-girl.jpg);
+	background-position: center;
+	background-size:cover;
+	width: 32.333333%;
+}
+
+.overlay {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #FFF;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	top: 0;
+}
+
+.box:hover .overlay {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.overlay .content {
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	transition: 0.2s;
+}
+
+.box:hover .content {
+	bottom: 30px;
+}
+
+.overlay .case-study {
+	border: solid 1px #FFF;
+	opacity: 0;
+	margin: 50px auto;
+	max-width: 130px;
+	padding: 10px;
+	transition: 0.2s;
+	transition-property: bottom;
+}
+
+.box:hover .case-study {
+	opacity: 1;
+}
+
+.case-study:hover {
+	background-color: #FFF;
+	color: #000;
+}
+
+.overlay .heading {
+	font-family: "Verlag A", "Verlag B", "Helvetica", "Arial", sans-serif;
+	font-size: 3.1em;
+	font-weight: 100;
+	line-height: 1.1em;
+	margin-top: 100px auto;
+	margin-bottom: 0.15em;
+	text-align: center;
+	text-shadow: 2px 0px 5px rgba(0,0,0,0.2);
+}
+
+.overlay .desc {
+	font-size: 1.4em;
+	line-height: 1.2em;
+	font-weight: 100;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	text-align: center;
+}
+
+/*
+End of CSS
+*/
