@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Lodash Templating!</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    
+      <div id="the-stocks"></div>
+        <script type="text/html" id="stock-template">
+        <div class ="container">
+          <div class="stock-name"><%= name %></div>
+          <div class="stock-symbol"><%= symbol %></div>
+          <div class="stock-price"><span>$</span><%= price %></div>
+        <div>
+      </script>
+
+    <script src="https://cdn.jsdelivr.net/lodash/4.15.0/lodash.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script>LoDashIt.start();</script>
+  </body>
+
+</html>
