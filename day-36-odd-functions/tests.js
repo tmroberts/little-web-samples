@@ -34,19 +34,21 @@ QUnit.test('Test to return the largest of two integers', function( assert ) {
   assert.equal(result, 9, 'Sample test.' );
 });
 
+
 QUnit.test('Test to return the largest of three integers', function( assert ) {
-  //call code
-  // var a = '3';
-  // var b = '5';
-  // var c = '7';
   var result = DataManipulator.largestOfThree(3,5,7);
   assert.equal(result, 7, 'Sample test.' );
 });
 
 
+QUnit.test('Test to reverse a string', function( assert ) {
+  var data = 'jag testar';
+  var result = DataManipulator.reverse(data);
+  assert.equal(result, 'ratset gaj', 'Sample test.' );
+});
+
 
 QUnit.test('Test to return the length of the largest of three words', function( assert ) {
-  //call code
   var largest = '';
   var words = ["dog", "cat", "horse"];
   var result = DataManipulator.findLongest(words);
@@ -55,7 +57,6 @@ QUnit.test('Test to return the length of the largest of three words', function( 
 
 
 QUnit.test('Test to return an array of words that are longer than than the parameter provided', function( assert ) {
-  //call code
   var newWords = ["Oklahoma", "Kansas", "Colorado"];
   var words = ["Texas", "Oklahoma", "Kansas", "Colorado"];
   var n = 5;
@@ -65,7 +66,6 @@ QUnit.test('Test to return an array of words that are longer than than the param
 
 
 QUnit.test('Test to return a list showing how many times each character occurs in the string.', function( assert ) {
-//call code
    var testString = 'abbabcbdbabdbdbabababcbcbab';
    var result = DataManipulator.charFreq(testString);
    //assert.deepEqual(result, {h:1, 2:1, p:2, y:1}, 'Sample test.' );

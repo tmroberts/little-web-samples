@@ -4,15 +4,12 @@ if (window.DataManipulator === undefined) window.DataManipulator = {};
 
   (function(DM) {
 
-
   // ---------------------
   // Define a function max() that takes two numbers as arguments and returns the largest of them. Use the if-then-else construct available in Javascript.
   // ---------------------
-
   function max(a,b){
       var result = '';
       //console.log('In max');
-
       if (a > b) {
         result = a;
       }
@@ -94,27 +91,34 @@ if (window.DataManipulator === undefined) window.DataManipulator = {};
   // ---------------------
   // Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".
   // ---------------------
-
-  function reverse(){
-      //...
+  function reverse(data){
+    //console.log('In reverse function ');
+    var result = '';
+    var len = data.length;
+    var currChar = '';
+    //console.log('This is data: ', data);
+    //console.log('This is data.length:', len);
+    for (var i = data.length - 1; i >= 0; i--) {
+      result += data[i];
+      //console.log('This is the current character', data[i]);
+    }
+    //console.log('This is result: ', result);
+    return result;
   }
 
   // ---------------------
   // Write a function findLongestWord() that takes an array of words and returns the length of the longest one.
   // ---------------------
-
   function findLongestWord(words){
     var result = '';
     var longestWord = '';
     //console.log('In findLongestWord');
-
     for (var i = 0; i < words.length; i++) {
         if (words[i].length > result) {
           result = words[i].length;
           longestWord = words[i];
         }
     }
-
     //console.log(result);
     //console.log('The longest word was: ', longestWord);
     return result;
@@ -125,10 +129,8 @@ if (window.DataManipulator === undefined) window.DataManipulator = {};
   // ---------------------
 
   function filterLongWords(words, n) {
-      //...
       var result = [];
       //console.log('In filterLongWords');
-
       for (var i = 0; i < words.length; i++) {
         if (words[i].length > n) {
           //console.log('words[i].length is: ', words[i].length, words[i]);
@@ -139,7 +141,6 @@ if (window.DataManipulator === undefined) window.DataManipulator = {};
             //console.log('FAIL result is: ', words[i] + '  '+ 'Length is:', words[i].length);
         }
       }
-
       //console.log('result is: ', result);
       return result;
   }
@@ -149,7 +150,7 @@ if (window.DataManipulator === undefined) window.DataManipulator = {};
   // ---------------------
 
   function charFreq(string){
-    console.log('In charFreq');
+    //console.log('In charFreq');
     var result = {};
     var len = string.length
     var currChar = '';
@@ -159,17 +160,17 @@ if (window.DataManipulator === undefined) window.DataManipulator = {};
     // var result_d = '';
     for (var i = 0; i < len; i++) {
       //console.log('string.length is: ', string[i].length, string[i]);
-      console.log('This is position: ',i + ' ' + 'of 27 total');
+      //console.log('This is position: ',i + ' ' + 'of 27 total');
       currChar = string.charAt(i);
-      console.log('This is character: ', currChar);
+      //console.log('This is character: ', currChar);
       if (currChar in result) {
         result[currChar] += 1;
       } else {
         result[currChar] = 1;
       }
-      console.log('This is the total for character: ',currChar + '  ' +  result[currChar])
+      //console.log('This is the total for character: ',currChar + '  ' +  result[currChar])
     }
-    console.log('This is result: ', result);
+    //console.log('This is result: ', result);
     return result;
   }
 
@@ -181,6 +182,7 @@ if (window.DataManipulator === undefined) window.DataManipulator = {};
   DM.findLongest = findLongestWord;
   DM.newWords = filterLongWords;
   DM.charFreq = charFreq;
+  DM.reverse = reverse;
 
 
 })(window.DataManipulator);
