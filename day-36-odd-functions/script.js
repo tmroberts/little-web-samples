@@ -57,7 +57,20 @@ if (window.DataManipulator === undefined) window.DataManipulator = {};
   // ---------------------
 
   function rovarspraket(phrase){
-      //...
+    //console.log('In rovarspraket function ');
+      var result = '';
+      // treat a space like a vowel
+      for(var i = 0; i < phrase.length; i++) {
+        if (phrase[i] == " " || phrase[i] == "a" || phrase[i] == "e" || phrase[i] == "i" || phrase[i] == "o" || phrase[i] == "u" || phrase[i] == "A" || phrase[i] == "E" || phrase[i] == "I" || phrase[i] == "O" || phrase[i] == "U") {
+          result += phrase[i];
+        }
+        else
+        {
+          result += phrase[i]+'o'+phrase[i];
+        }
+      }
+      //console.log('This is result: ', result);
+      return result;
   }
 
   // ---------------------
@@ -183,6 +196,6 @@ if (window.DataManipulator === undefined) window.DataManipulator = {};
   DM.newWords = filterLongWords;
   DM.charFreq = charFreq;
   DM.reverse = reverse;
-
+  DM.rovarspraket = rovarspraket;
 
 })(window.DataManipulator);

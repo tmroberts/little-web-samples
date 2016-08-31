@@ -1,33 +1,39 @@
 QUnit.test('Test summming an array of numbers', function( assert ) {
-  //call code
   var numbers = [1, 2, 3, 4];
   var result = DataManipulator.sum(numbers);
   assert.equal(result, 10, 'Sample test.' );
 });
 
+
 QUnit.test('Test multiplying an array of numbers', function( assert ) {
-  //call code
   var numbers = [1, 2, 3, 4];
   var result = DataManipulator.multiply(numbers);
   assert.equal(result, 24, 'Sample test.' );
 });
 
+
 QUnit.test('Test input letter to see if it is a vowel', function( assert ) {
-  //call code
   var letter = 'M';
   var result = DataManipulator.vowel(letter);
   assert.equal(result, false, 'Sample test.' );
 });
 
+
 QUnit.test('Test letter to see if it is a vowel', function( assert ) {
-  //call code
   var letter = 'A';
   var result = DataManipulator.vowel(letter);
   assert.equal(result, true, 'Sample test.' );
 });
 
+
+QUnit.test('A function rovarspraket() that will translate text into rövarspråket.', function( assert ) {
+  var phrase = 'this is fun';
+  var result = DataManipulator.rovarspraket(phrase);
+  assert.equal(result, "tothohisos isos fofunon", 'Sample test.' );
+});
+
+
 QUnit.test('Test to return the largest of two integers', function( assert ) {
-  //call code
   var a  = '5';
   var b  = '9';
   var result = DataManipulator.largest(a,b);
