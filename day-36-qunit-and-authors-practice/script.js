@@ -20,6 +20,19 @@ if (this.QUnitPractice === undefined) this.QUnitPractice = {};
     { name: 'Jacob Neusner', language: 'English', publishedWorks: 950 },
     { name: 'Georges Simenon', language: 'French', publishedWorks: 500 }
   ];
+}
+
+
+// function filterByLanguage(language) {
+//   var filteredAuthors =[];
+//   for (var author of authors) {
+//     if (author.language === language) {
+//       filteredAuthors.push(author);
+//     }
+//   }
+//   return FilteredAuthors;
+// }
+
 
   function arabicAuthorsCount() {
     //console.log('In arabicAuthorsCount');
@@ -154,10 +167,10 @@ function avgPublishedWorksCount() {
   var publishedTotal = 0;
   var avg = 0;
   //console.log('In avgPublishedWorksCount ');
-  var filteredAuthors = [];
   for (var author of authors) {
     publishedCount += 1;
-    publishedTotal = publishedTotal += author.publishedWorks;
+    publishedTotal += author.publishedWorks;
+    //publishedTotal = publishedTotal += author.publishedWorks;
     //console.log('This is count:', count);
     //console.log('This is total:', total);
   }
@@ -197,26 +210,36 @@ function avgPublishedWorksCountEnglish() {
   context.avgPublishedWorksCountEnglish = avgPublishedWorksCountEnglish;
 
 /////////
+// function avgPublishedWorksCountEnglish() {
+//   var filteredAuthors = filterByLanguage('English');
+//   var total = 0;
+//   for (var englishAuthor of filteredAuthors) {
+//     total += englishAuthor.publishedWorks;
+//   }
+//
+//   return total / filteredAuthors.length;
+// }
+//////////
 
 function avgPublishedWorksCountJapenese() {
   //var numbers = [470];
   var publishedCount = 0;
   var publishedTotal = 0;
   var avg = 0;
-  console.log('In avgPublishedWorksCountEnglish');
+  //console.log('In avgPublishedWorksCountEnglish');
   var filteredAuthors = [];
   for (var author of authors) {
     if (author.language === 'Japanese') {
       publishedCount += 1;
       publishedTotal = publishedTotal += author.publishedWorks;
-      console.log('This is count:', publishedCount);
-      console.log('This is total:', publishedTotal);
+      //console.log('This is count:', publishedCount);
+      //console.log('This is total:', publishedTotal);
     }
   }
   avg = (publishedTotal / publishedCount);
-  console.log('This is avg:', avg);
+  //console.log('This is avg:', avg);
   avg = Math.floor(avg);
-  console.log('This is rounded avg:', avg);
+  //console.log('This is rounded avg:', avg);
   return avg;
 }
  context.avgPublishedWorksCountJapanese = avgPublishedWorksCountJapenese;
