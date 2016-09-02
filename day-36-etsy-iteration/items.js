@@ -1077,7 +1077,7 @@ function itemsBetween() {
   var itemsList = [];
   var itemCount = 0;
   for (var item of items) {
-    itemCount += 1;
+    //itemCount += 1; this was for console logging
     //console.log('This is itemCount:', itemCount);
     //console.log('This is price:', item.price);
     //console.log('This is itemTotal:', itemTotal);
@@ -1100,7 +1100,7 @@ function itemsGBP() {
     var itemsList = [];
     var itemCount = 0;
     for (var item of items) {
-      itemCount += 1;
+      //itemCount += 1;this was for console logging
       //console.log('This is itemCount:', itemCount);
       //console.log('This is price:', item.price);
       //console.log('This is itemTotal:', itemTotal);
@@ -1142,7 +1142,7 @@ function itemsWithEight() {
   var itemCount = 0;
   for (var item of items) {
     var itemMaterials = item.materials;
-    itemCount += 1;
+    //itemCount += 1;this was for console logging
     if (item.materials.length >= 8 )  {
       itemsList.push(item.title);
       //console.log(itemCount + '.  ' + item.title);
@@ -1163,7 +1163,7 @@ function madeBySeller() {
   var madeBy = '';
   for (var item of items) {
     madeBy  = item.who_made;
-    itemCount += 1;
+    //itemCount += 1;this was for console logging
     if (item.who_made === 'i_did' )  {
       itemsList.push(item.title);
       //console.log(itemCount + '.  ' + item.who_made + '  ' + item.title);
